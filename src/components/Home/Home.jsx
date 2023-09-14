@@ -1,16 +1,25 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
 import { FaBookmark} from 'react-icons/fa';
 
 
 import Cart from '../Cart/Cart'
 const Home = () => {
+
+        const [allCards,setAllCards] = useState([])
+
+
+    useEffect(()=>{
+        fetch('data.json')
+        .then(res=>res.json())
+        .then(data =>setAllCards(data))
+    },[])
+    
     return (
-
-
     <div className="container">
-            <div className="card-container">
+            <div className="Home-container">
+                <div className="card-container">
                 <div className="card">
                     <div className="card-img">
                         <img className='photo' src="https://i.ibb.co/SRkKGGM/Rectangle-2-1.png" alt="" />
@@ -24,7 +33,10 @@ const Home = () => {
                    </div>
                    <button>Select</button>
                 </div>
-
+                </div>
+            <div className="cart">
+                <h1>this is cart</h1>
+            </div>
 
             </div>
 
