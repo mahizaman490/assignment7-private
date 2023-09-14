@@ -1,0 +1,75 @@
+[
+    {
+      "id": "1001",
+      "cover": "https://i.ibb.co/L1L59mc/Rectangle-2-2.png",
+      "title": "Introduction to C programming",
+      "description":"this is a foundational course that provides a comprehensive overview of the C programming language. Students will learn the basics of C",
+      "price":15000,
+      "Credit_time": 1
+    },
+    {
+      "id": "1002",
+      "cover": "https://i.ibb.co/3SqdHPz/Rectangle-2-3.png",
+      "title": "Introduction to Algorithms",
+      "description": "This is a fundamental course exploring the core principles and techniques used in designing and analyzing algorithms.",
+      "price": 25000,
+      "Credit_time": 2
+    },
+    {
+      "id": "1003",
+      "cover": "https://i.ibb.co/fxn29Nm/Rectangle-2-4.png",
+      "title": "Introduction to C++ foe DSA",
+      "description": "This is a course designed to teach students the C++ programming language in the context of Data Structures and Algorithms (DSA).",
+      "price": 10000,
+      "Credit_time": 10
+    },
+    {
+      "id": "1004",
+      "cover": "https://i.ibb.co/88vCy5z/Rectangle-3.png",
+      "title": "Basic Data Structures",
+      "description": "This is an introductory course that covers the fundamental building blocks of data organization, including arrays, linked lists, stacks, and queues.",
+      "price": 35000,
+      "Credit_time": 1
+    },
+    {
+      "id": "1005",
+      "cover": "https://i.ibb.co/CJj29xy/Rectangle-2.png",
+      "title": "Introduction to OOP Python",
+      "description": "This is a course that introduces students to the principles of Object-Oriented Programming (OOP) using the Python programming language.",
+      "price": 19000,
+      "Credit_time": 2
+    },
+    {
+      "id": "1006",
+      "cover": "https://i.ibb.co/kmMzGyn/Rectangle-2-5.png",
+      "title": "Software Engineering",
+      "description": "The Software Engineering course offers a comprehensive study of software development methodologies, project management, and best practices.",
+      "price": 23000,
+      "Credit_time": 5
+    },
+    {
+      "id": "1007",
+      "cover": "https://i.ibb.co/18KkCn5/Rectangle-3-1.png",
+      "title": "AWS, Could Computing",
+      "description": "Participants gain the skills needed to leverage AWS for scalable and cost-effective cloud solutions, making them proficient in cloud computing technologies.",
+      "price": 35000,
+      "Credit_time": 4
+    },
+    {
+      "id": "1008",
+      "cover": "https://i.ibb.co/SRkKGGM/Rectangle-2-1.png",
+      "title": "Database (MySQL)",
+      "description": "The Database (MySQL) course offers comprehensive instruction in database management using the MySQL relational database management system.",
+      "price": 19000,
+      "Credit_time": 2
+    },
+    {
+      "id": "1009",
+      "cover": "https://i.ibb.co/LnGgLSp/Rectangle-2-6.png",
+      "title": "Problem-Solving Part",
+      "description": "The Problem-Solving Part of the course equips students with critical thinking and analytical skills to tackle complex challenges.",
+      "price": 27000,
+      "Credit_time": 3
+    }
+  ]
+  
