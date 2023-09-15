@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import './Home.css'
@@ -15,24 +16,26 @@ const Home = () => {
         .then(res=>res.json())
         .then(data =>setAllCards(data))
     },[])
-    
+    console.log(allCards)
     return (
     <div className="container">
             <div className="Home-container">
                 <div className="card-container">
-                <div className="card">
+                {
+                    allCards.map(card => (<div key={card.id} className="card">
                     <div className="card-img">
-                        <img className='photo' src="https://i.ibb.co/SRkKGGM/Rectangle-2-1.png" alt="" />
+                        <img className='photo' src={card.cover} alt="" />
                     </div>
-                     <h3>introduction to c programming</h3> 
-                      <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eos voluptas nam explicabo soluta suscipit excepturi sed assumenda dolorum doloremque.</small></p> 
+                     <h3>{card.title}</h3> 
+                      <p><small>{card.description}</small></p> 
                       <div className="info">
-                     <span style={{fontSize : '20px', fontWeight:'bolder'}}>$</span><p>price:26000</p>
-                     <span><FaBookmark></FaBookmark></span><p>Credit : 5hr</p>
+                     <span style={{fontSize : '20px', fontWeight:'bolder'}}>$</span><p>price:{card.price}</p>
+                     <span><FaBookmark></FaBookmark></span><p>Credit : {card.Credit_time}hr</p>
 
                    </div>
                    <button>Select</button>
-                </div>
+                </div>))
+                }
                 </div>
             <div className="cart">
                 <h1>this is cart</h1>
