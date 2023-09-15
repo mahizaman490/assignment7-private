@@ -1,8 +1,10 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
+import { BsBook } from 'react-icons/bs';
+import { FaDollarSign } from 'react-icons/fa';
+
 import React, { useEffect, useState } from 'react';
 import './Home.css'
-import { FaBookmark} from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -62,8 +64,8 @@ const Home = () => {
                      <h3>{card.title}</h3> 
                       <p><small>{card.description}</small></p> 
                       <div className="info">
-                     <span style={{fontSize : '20px', fontWeight:'bolder'}}>$</span><p>price:{card.price}</p>
-                     <span><FaBookmark></FaBookmark></span><p>Credit : {card.Credit_time}hr</p>
+                     <span><FaDollarSign/></span><p>price:{card.price}</p>
+                     <span><BsBook/></span><p>Credit : {card.Credit_time}hr</p>
 
                    </div>
                    <button onClick={()=>handleSelectCard(card)}>Select</button>
