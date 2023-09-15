@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import { FaBookmark} from 'react-icons/fa';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Cart from '../Cart/Cart'
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
         const isExist = selectedCard.find((item)=>item.id == card.id)
         let count = card.Credit_time;
         if (isExist){
-              return alert('already selected')
+              return toast('already selected')
         }else{
             // eslint-disable-next-line no-undef
             selectedCard.forEach((item) => {
@@ -33,7 +34,7 @@ const Home = () => {
              const totalRemaining = 20 - count;
             
              if(count>20){
-               return alert('Cannot by more than 20hrs')
+                return toast('Cannot by more than 20hrs and the remaining credit cannot be zero')
             
 
              }else{
@@ -49,7 +50,8 @@ const Home = () => {
     }
    
     return (
-    <div className="container">
+   <>
+         <div className="container">
             <div className="Home-container">
                 <div className="card-container">
                 {
@@ -73,8 +75,12 @@ const Home = () => {
             </div>
 
             </div>
-
+            
     </div>
+   
+   <ToastContainer/>
+   
+   </>
 
 
 
