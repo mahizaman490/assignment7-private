@@ -14,7 +14,7 @@ const Home = () => {
         const [allCards,setAllCards] = useState([])
         const [selectedCard,setSelectedCard] = useState([])
         const [remaining,setRemaining] = useState(20)
-        const [totalCredit,setTotalCredit] = useState()
+        const [totalCredit,setTotalCredit] = useState(0)
 
     useEffect(()=>{
         fetch('data.json')
